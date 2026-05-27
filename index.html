@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>원주시 사전투표소 안내 · 제9회 전국동시지방선거</title>
+<meta name="description" content="5.29(금)~5.30(토) 원주시 사전투표소 위치 및 장애인 편의시설 안내">
+<meta property="og:title" content="원주시 사전투표소 안내 · 제9회 전국동시지방선거">
+<meta property="og:description" content="5.29(금)~5.30(토) · 06:00~18:00 · 신분증 필수">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1A4FA0">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#1A4FA0;--blue-dark:#0f3578;--blue-light:#E8EEF8;--blue-mid:#3B6FCC;
+  --gray-bg:#F5F5F5;--gray-line:#E0E0E0;--gray-mid:#9E9E9E;
+  --text:#1A1A1A;--text2:#555;--text3:#888;--white:#FFFFFF;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:14px;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.08);--shadow-md:0 2px 8px rgba(0,0,0,0.10);
+}
+html{font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:var(--gray-bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+.wrap{max-width:480px;margin:0 auto;background:var(--gray-bg);min-height:100vh}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#1A4FA0 0%,#0f3578 100%);color:#fff;padding:20px 20px 0;padding-top:calc(env(safe-area-inset-top,0px) + 20px)}
+.hero-eyebrow{font-size:11px;letter-spacing:.08em;opacity:.75;margin-bottom:6px;font-weight:500}
+.hero-title{font-size:22px;font-weight:700;line-height:1.3;margin-bottom:4px}
+.hero-subtitle{font-size:13px;opacity:.8;margin-bottom:18px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);color:#fff;white-space:nowrap}
+.chip svg{width:13px;height:13px;flex-shrink:0}
+.search-row{position:relative;margin:0 -20px;padding:0 16px 16px}
+.search-row .si{position:absolute;left:28px;top:50%;transform:translateY(-65%);width:16px;height:16px;color:var(--gray-mid);pointer-events:none}
+.search-row input{width:100%;padding:11px 14px 11px 40px;font-size:14px;border:none;border-radius:var(--radius-md);background:var(--white);color:var(--text);box-shadow:var(--shadow-md);outline:none;font-family:inherit}
+.search-row input::placeholder{color:var(--gray-mid)}
+.search-row input:focus{box-shadow:0 0 0 3px rgba(255,255,255,.35),var(--shadow-md)}
+
+/* TABS */
+.tabs-wrap{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--gray-line);box-shadow:var(--shadow-sm)}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 4px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:12px 14px;font-size:13px;font-weight:500;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .15s,border-color .15s;-webkit-tap-highlight-color:transparent;user-select:none}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* CONTENT */
+.content{padding:14px 14px calc(env(safe-area-inset-bottom,16px) + 16px)}
+.section-head{display:flex;align-items:center;gap:7px;margin:18px 0 8px 2px;font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.04em;text-transform:uppercase}
+.section-head:first-child{margin-top:4px}
+.section-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.count-row{display:flex;justify-content:space-between;align-items:center;padding:4px 2px 10px}
+.count-label{font-size:13px;color:var(--text3)}
+.count-num{font-size:13px;font-weight:700;color:var(--text)}
+
+/* CARD */
+.card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);border:1px solid var(--gray-line);margin-bottom:10px;overflow:hidden;transition:box-shadow .15s}
+.card:active{box-shadow:var(--shadow-md)}
+.card-head{padding:13px 16px 10px;border-bottom:1px solid var(--gray-line);display:flex;align-items:flex-start;gap:10px}
+.card-icon{width:34px;height:34px;border-radius:8px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.card-icon svg{width:17px;height:17px;color:var(--blue)}
+.card-title-wrap{flex:1;min-width:0}
+.card-area{font-size:11px;font-weight:600;color:var(--blue);margin-bottom:2px}
+.card-name{font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+.card-body{padding:10px 16px 12px}
+.card-place{font-size:13px;color:var(--text2);margin-bottom:6px;line-height:1.5}
+.card-addr{display:flex;gap:5px;align-items:flex-start;font-size:12px;color:var(--text3);margin-bottom:10px;line-height:1.5}
+.card-addr svg{width:13px;height:13px;flex-shrink:0;margin-top:1px}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.tags{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.tag{font-size:11px;font-weight:500;padding:3px 8px;border-radius:99px;background:var(--blue-light);color:var(--blue);white-space:nowrap}
+.tag.none{background:var(--gray-bg);color:var(--gray-mid)}
+.map-btn{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--white);background:var(--blue);padding:6px 13px;border-radius:99px;text-decoration:none;flex-shrink:0;transition:background .15s;-webkit-tap-highlight-color:transparent;border:none;cursor:pointer;font-family:inherit}
+.map-btn:active{background:var(--blue-dark)}
+.map-btn svg{width:13px;height:13px}
+.empty{text-align:center;padding:4rem 1rem;color:var(--gray-mid)}
+.empty svg{width:44px;height:44px;margin:0 auto 12px;display:block;opacity:.35}
+.empty p{font-size:14px}
+.empty small{font-size:12px;display:block;margin-top:4px}
+
+/* FOOTER */
+.footer{background:var(--white);border-top:1px solid var(--gray-line);padding:20px 20px calc(env(safe-area-inset-bottom,0px) + 24px);margin-top:8px}
+.footer p{font-size:11px;color:var(--text3);line-height:1.8;text-align:center}
+.footer a{color:var(--blue);text-decoration:none}
+.footer-copy{font-size:11px;color:var(--gray-mid);text-align:center;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="hero-eyebrow">제9회 전국동시지방선거 · 강원특별자치도 원주시</div>
+  <div class="hero-title">원주시<br>사전투표소 안내</div>
+  <div class="hero-subtitle">총 25개 투표소 · 신분증 지참 시 어디서나 투표 가능</div>
+  <div class="chips">
+    <span class="chip">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      5.29(금) ~ 5.30(토)
+    </span>
+    <span class="chip">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+      06:00 ~ 18:00
+    </span>
+    <span class="chip">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+      신분증 필수
+    </span>
+  </div>
+  <div class="search-row">
+    <svg class="si" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="searchInput" placeholder="투표소명, 주소, 읍·면·동 검색…" oninput="render()">
+  </div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tabs" id="tabs"></div>
+</div>
+
+<div class="content" id="content"></div>
+
+<div class="footer">
+  <p>본 페이지는 중앙선거관리위원회 선거통계시스템 오픈 데이터를 기반으로<br>
+  시민 여러분의 투표 편의를 위해 제작되었습니다.<br>
+  사전투표는 신분증 지참 시 전국 모든 사전투표소에서 가능합니다.<br>
+  선거문의 <a href="tel:1390">국번없이 1390</a></p>
+  <p class="footer-copy">© 2026 · 선거 데이터 출처: 중앙선거관리위원회</p>
+</div>
+
+</div>
+<script>
+const DATA=[
+  {area:"문막읍",name:"문막읍 사전투표소",place:"문막복지회관 (1층, 은행나무실)",addr:"원주시 문막읍 문막시장1길 26",fac:["장애인화장실"]},
+  {area:"소초면",name:"소초면 사전투표소",place:"소초면주민자치센터 (1층, 세미나실)",addr:"원주시 소초면 평장동길 86-16",fac:["장애인화장실"]},
+  {area:"호저면",name:"호저면 사전투표소",place:"호저초등학교 (2층, 한빛관)",addr:"원주시 호저면 호저로 428",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"지정면",name:"지정면 사전투표소",place:"서부권생활문화센터 (3층, 다목적실)",addr:"원주시 지정면 가곡로 75-1",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"부론면",name:"부론면 사전투표소",place:"부론초등학교 (1층, 보람관)",addr:"원주시 부론면 법천시장길 58",fac:[]},
+  {area:"귀래면",name:"귀래면 사전투표소",place:"귀래면복지센터 (1층, 대강당)",addr:"원주시 귀래면 부귀로 1967",fac:["점자유도블럭","장애인화장실"]},
+  {area:"흥업면",name:"흥업면 사전투표소",place:"흥업면다목적복지센터 (1층, 다목적실)",addr:"원주시 흥업면 울업1길 3",fac:["점자유도블럭","장애인화장실"]},
+  {area:"판부면",name:"판부면 사전투표소",place:"원주시 가족센터 (2층, 203호)",addr:"원주시 판부면 매봉길 16-18",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"신림면",name:"신림면 사전투표소",place:"신림힐링센터 (1층, 식당)",addr:"원주시 신림면 제원로 1415",fac:["점자유도블럭","장애인화장실"]},
+  {area:"중앙동",name:"중앙동 사전투표소",place:"중앙청소년문화의집 (1층, 휴게공간)",addr:"원주시 중앙로 89",fac:["장애인화장실"]},
+  {area:"원인동",name:"원인동 사전투표소",place:"밥상공동체종합사회복지관 (2층, 로비)",addr:"원주시 일산로 81-2",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"개운동",name:"개운동 사전투표소",place:"개운동행정복지센터 (3층, 대회의실)",addr:"원주시 행구로 40",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"명륜1동",name:"명륜1동 사전투표소",place:"댄싱공연장 (1층, 제1연습실)",addr:"원주시 단구로 170",fac:["점자유도블럭","장애인화장실"]},
+  {area:"명륜2동",name:"명륜2동 사전투표소",place:"명륜2동행정복지센터 별관 (1층, 회의실)",addr:"원주시 황소마을길 30",fac:["점자유도블럭","장애인화장실"]},
+  {area:"단구동",name:"단구동 사전투표소",place:"단구동행정복지센터 (3층, 대회의실)",addr:"원주시 늘품로 83",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"일산동",name:"일산동 사전투표소",place:"일산초등학교 (1층, 새싹꿈마당)",addr:"원주시 일산초교길 1",fac:[]},
+  {area:"학성동",name:"학성동 사전투표소",place:"원주축협 본점 (2층, 문화센터)",addr:"원주시 원일로 233",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"단계동",name:"단계동 사전투표소",place:"단계동행정복지센터 (2층, 대회의실)",addr:"원주시 북원로 2321",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"우산동",name:"우산동 사전투표소",place:"원주시근로자종합복지관 (2층, 다목적실)",addr:"원주시 우산공단길 24",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"태장1동",name:"태장1동 사전투표소",place:"원주드림체육관 (2층, 보치아교실)",addr:"원주시 현충로 53-1",fac:["승강기","도움벨","점자유도블럭","장애인화장실"]},
+  {area:"태장2동",name:"태장2동 사전투표소",place:"태장2동행정복지센터 (3층, 다목적실)",addr:"원주시 흥양로50번길 1",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"봉산동",name:"봉산동 사전투표소",place:"봉산동행정복지센터 (3층, 다목적실)",addr:"원주시 치악로 1868",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"행구동",name:"행구동 사전투표소",place:"행구동행정복지센터 (2층, 대회의실)",addr:"원주시 행구로 250",fac:["승강기","점자유도블럭","장애인화장실"]},
+  {area:"무실동",name:"무실동 사전투표소",place:"원주문화원 (1층, 전시실)",addr:"원주시 무실로 235",fac:["도움벨","점자유도블럭","장애인화장실"]},
+  {area:"반곡관설동",name:"반곡관설동 사전투표소",place:"반곡관설동행정복지센터 (2층, 대회의실)",addr:"원주시 입춘로 5",fac:["승강기","점자유도블럭","장애인화장실"]},
+];
+const AREAS=["전체","문막읍","소초면","호저면","지정면","부론면","귀래면","흥업면","판부면","신림면","중앙동","원인동","개운동","명륜1동","명륜2동","단구동","일산동","학성동","단계동","우산동","태장1동","태장2동","봉산동","행구동","무실동","반곡관설동"];
+let activeTab="전체";
+
+const SVG_PIN=`<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>`;
+const SVG_VOTE=`<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/><polyline points="15,17 17,19 21,15"/></svg>`;
+const SVG_MAP=`<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="1,6 1,22 8,18 16,22 23,18 23,2 16,6 8,2"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>`;
+const SVG_SRCH=`<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+
+function mapUrl(d){return`https://map.naver.com/v5/search/${encodeURIComponent('강원특별자치도 '+d.addr)}`;}
+
+function cardHtml(d){
+  const tags=d.fac.length?d.fac.map(f=>`<span class="tag">${f}</span>`).join(''):`<span class="tag none">편의시설 정보 없음</span>`;
+  return`<div class="card">
+    <div class="card-head">
+      <div class="card-icon">${SVG_VOTE}</div>
+      <div class="card-title-wrap">
+        <div class="card-area">${d.area}</div>
+        <div class="card-name">${d.name}</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-place">${d.place}</div>
+      <div class="card-addr">${SVG_PIN}<span>${d.addr}</span></div>
+      <div class="card-foot">
+        <div class="tags">${tags}</div>
+        <a href="${mapUrl(d)}" class="map-btn" target="_blank" rel="noopener">${SVG_MAP} 지도</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function render(){
+  const q=(document.getElementById('searchInput').value||'').trim().toLowerCase();
+  const filtered=DATA.filter(d=>{
+    const tabOk=activeTab==='전체'||d.area===activeTab;
+    const searchOk=!q||[d.area,d.name,d.place,d.addr].some(s=>s.toLowerCase().includes(q));
+    return tabOk&&searchOk;
+  });
+  const el=document.getElementById('content');
+  if(!filtered.length){el.innerHTML=`<div class="empty">${SVG_SRCH}<p>검색 결과가 없습니다</p><small>다른 검색어나 읍·면·동을 선택해 보세요</small></div>`;return;}
+  let html='';
+  if(activeTab==='전체'&&!q){
+    const groups={};
+    filtered.forEach(d=>{(groups[d.area]=groups[d.area]||[]).push(d);});
+    Object.keys(groups).forEach(area=>{
+      html+=`<div class="section-head"><span class="section-dot"></span>${area}</div>`;
+      groups[area].forEach(d=>html+=cardHtml(d));
+    });
+  } else {
+    html+=`<div class="count-row"><span class="count-label">검색된 투표소</span><span class="count-num">${filtered.length}개</span></div>`;
+    filtered.forEach(d=>html+=cardHtml(d));
+  }
+  el.innerHTML=html;
+}
+
+function renderTabs(){
+  document.getElementById('tabs').innerHTML=AREAS.map(a=>`<div class="tab${a===activeTab?' active':''}" onclick="setTab('${a}')">${a}</div>`).join('');
+  const active=document.querySelector('.tab.active');
+  if(active) active.scrollIntoView({inline:'center',block:'nearest'});
+}
+
+function setTab(a){activeTab=a;renderTabs();render();}
+renderTabs();render();
+</script>
+</body>
+</html>
